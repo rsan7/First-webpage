@@ -1,0 +1,239 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f8f9fa;
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    background: linear-gradient(to right, #975dd4, #445ef1);
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    font-size: 2.5rem;
+}
+
+.container h2{
+    color:  #007bff;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    padding: 10px 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1rem;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ffeb3b;
+}
+
+.inside_container{
+    color: rgb(143, 143, 233);
+    font-size: 2rem;
+}
+
+.hero {
+    background: url("https://cdn.glitch.global/0d8576a1-0e73-44b5-b9cc-9fa268cf2b07/sijako_hero.jpg?v=1729409609161") no-repeat center; /* Center the image */
+    background-size: cover; /* Ensure it covers the entire area */
+    display: flex;
+    height: 90vh;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    padding: 0 20px;
+    position: relative;
+    z-index: 1;
+}
+
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(255, 255, 255, 0.5);
+    z-index: -1;
+}
+
+.hero h2 {
+    font-size: 3rem;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    color: rgb(81, 81, 218);
+}
+
+.container {
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.content-section {
+    flex: 2;
+    margin-right: 20px;
+}
+
+.content-section h3 {
+    font-size: 2rem;
+    color: #007bff;
+    margin-bottom: 20px;
+}
+
+.content-section p {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+}
+
+.card {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.card-item {
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 20px 0;
+    flex: 1;
+    max-width: 30%;
+    min-width: 280px;
+    transition: transform 0.3s;
+    text-align: center;
+}
+
+.card-item:hover {
+    transform: translateY(-10px);
+}
+
+.card-item img {
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.card-item h4 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.card-item p {
+    font-size: 1rem;
+    color: #666;
+}
+
+.founder-section {
+    flex: 1;
+    background-color: #f4f4f4;
+    padding: 30px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 540px;
+}
+
+.founder-section img {
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+.founder-section h3 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.founder-section p {
+    font-size: 1rem;
+    color: #666;
+    text-align: center;
+    padding: 0 10px;
+    height: 300px;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    height: 200px;
+}
+
+footer p {
+    font-size: 1rem;
+}
+
+footer a {
+    color: #00d4ff;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #ffeb3b;
+}
+
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    .hero h2 {
+        font-size: 2.5rem;
+    }
+
+    .card-item {
+        max-width: 100%;
+    }
+
+    .container {
+        flex-direction: column;
+    }
+
+    .content-section {
+        margin-right: 0;
+    }
+
+    .founder-section {
+        height: auto; 
+    }
+}
